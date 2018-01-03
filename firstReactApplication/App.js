@@ -10,7 +10,7 @@ class HomeScreen extends React.Component {
      const { navigate } = this.props.navigation;
      return (
        <View style={styles.container}>
-         <Text  style={{fontWeight: 'bold'}}>Hello and Welcome!</Text>
+         <Text  style={styles.textstyle}>Hello and Welcome to my application!{'\n'} This is the home page.{'\n'}</Text>
          <Button
 		 color="#841584"
            onPress={() => navigate('SecondPage')}
@@ -28,7 +28,7 @@ class SecondPage extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text >Hello World</Text>
+        <Text style={styles.textstyle} > Hello World!{'\n'} This is the second page of my application.</Text>
       </View>
     );
   }
@@ -46,11 +46,21 @@ export default class App extends React.Component {
 }
 //Styling for application
 const styles = StyleSheet.create({
+ textstyle: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 40,
+	fontWeight: 'bold'
+  },
+
   container: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+	//fontSize: 20,
+   // margin: 0,
+
 	//fontWeight: 'bold'
   }
 });
