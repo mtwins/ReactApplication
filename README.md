@@ -1,4 +1,11 @@
 # ReactApplication
+To run application:
+On command line, navigate to the firstReactApplication folder.
+ex: cd ../ReactApplication/firstReactApplication
+Run command: npm install.
+Open emulator.
+Run command: react-native run-android
+
 I have made a simple react application, which has 2 views.
 The user is able to navigate from the first view to the second view using 
 a button on the screen. The user can go back to the first view using the back button
