@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View,Button } from 'react-native';
 import { StackNavigator } from 'react-navigation';
-
+//Home page
 class HomeScreen extends React.Component {
   static navigationOptions = {
     title: 'Welcome To My First Application'
@@ -20,7 +20,7 @@ class HomeScreen extends React.Component {
      );
    }
 }
-
+//Second page of application
 class SecondPage extends React.Component {
   static navigationOptions = {
     title: 'SecondPage',
@@ -33,7 +33,7 @@ class SecondPage extends React.Component {
     );
   }
 }
-
+//Add stack Navigator
 const SimpleApp = StackNavigator({
   Home: { screen: HomeScreen },
    SecondPage: { screen: SecondPage },
@@ -44,7 +44,7 @@ export default class App extends React.Component {
     return <SimpleApp />;
   }
 }
-
+//Styling for application
 const styles = StyleSheet.create({
   container: {
     flex: 1,
