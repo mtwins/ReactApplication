@@ -46,6 +46,7 @@ export default class App extends React.Component {
 }
 //Styling for application
 const styles = StyleSheet.create({
+	
  textstyle: {
     fontSize: 20,
     textAlign: 'center',
@@ -58,9 +59,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-	//fontSize: 20,
-   // margin: 0,
 
-	//fontWeight: 'bold'
   }
 });
